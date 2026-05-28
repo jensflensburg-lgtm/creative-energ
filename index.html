@@ -212,6 +212,66 @@ footer{padding:24px 48px;border-top:1px solid var(--line);display:flex;justify-c
 
 /* SCROLL REVEAL — disabled for compatibility */
 .reveal{opacity:1;transform:none}
+
+/* ── MOBILE RESPONSIVE ── */
+@media(max-width:768px){
+  nav{padding:12px 20px}
+  .nav-r .nav-link{display:none}
+  .nav-cta{font-size:10px;padding:7px 14px}
+  .logo-name{font-size:11px}
+
+  .hero{padding:0 20px;min-height:auto}
+  .hero-main{grid-template-columns:1fr;padding-top:56px;padding-bottom:32px;gap:16px}
+  .hero-img{order:-1;justify-content:flex-start}
+  .hero-img img{max-width:200px}
+  .hero-h{font-size:clamp(36px,10vw,52px);line-height:1.0}
+  .hero-p{font-size:15px;max-width:100%}
+  .hero-bar{flex-wrap:wrap}
+  .hb-item{flex:0 0 50%;border-bottom:1px solid var(--line);padding:14px 0}
+  .hb-item:nth-child(odd){padding-right:12px}
+  .hb-num{font-size:22px}
+
+  .featured{padding:40px 20px}
+  .featured-inner{grid-template-columns:1fr}
+  .featured-visual{min-height:280px;padding:20px}
+  .feat-score{top:16px;right:16px}
+  .feat-score-num{font-size:40px}
+  .feat-co{font-size:26px}
+  .featured-story{padding:24px}
+  .feat-story-h{font-size:17px}
+  .feat-kpis{grid-template-columns:1fr 1fr}
+
+  .mosaic{padding:40px 20px}
+  .mosaic-header{flex-direction:column;align-items:flex-start;gap:12px}
+  .mosaic-sub{text-align:left;max-width:100%}
+  .mosaic-grid{grid-template-columns:1fr}
+  .mc.tall,.mc.wide{grid-row:span 1;grid-column:span 1}
+  .mc{padding:20px}
+
+  .types{padding:40px 20px}
+  .types-grid{grid-template-columns:1fr}
+
+  .feed{padding:40px 20px}
+  .feed-header{grid-template-columns:1fr;gap:12px}
+  .feed-masonry{columns:1}
+
+  .nom{padding:40px 20px}
+  .nom-inner{grid-template-columns:1fr;gap:36px}
+  .fr{grid-template-columns:1fr}
+  .nom-form{padding:24px}
+
+  .jury{padding:40px 20px}
+  .jury-header{grid-template-columns:1fr;gap:12px}
+  .jury-grid{grid-template-columns:1fr}
+
+  .cta{padding:56px 20px}
+  .cta-h{font-size:clamp(26px,8vw,40px)}
+  .cta-btns{flex-direction:column;align-items:stretch;gap:10px}
+  .btn-cw,.btn-co{text-align:center}
+
+  footer{padding:20px;flex-direction:column;gap:14px;text-align:center}
+  .fl-r{flex-wrap:wrap;justify-content:center;gap:14px}
+}
 </style>
 </head>
 <body>
